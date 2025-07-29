@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Online Calculator </title>
+    <style>
+          *{
+            margin: 0px;
+            background-color: darkgrey;
+          }
+          .container{
+            height: fit-content;
+            width: max-width;
+            padding: 50px;
+          }
+
+          .calculator-container{
+            width: fit-content;
+            height: 450px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: darkgrey;
+            border-radius: 15px;
+            box-shadow: 10px 10px 50px;
+          }
+
+          .answer-section{
+            background-color: lightgrey;
+            padding: 25px;
+            margin: 10px;
+            border-radius: 7px;
+          }
+
+          .buttons-container{
+            margin: 3px;
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .symbols-container{
+            margin: 3px;
+          }
+
+          .signs-container{
+            border: 1px solid;
+            margin: 3px;
+            width: 60px;
+          }
+
+          .rows{
+            margin: 4px;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5px;
+            gap: 1rem;
+          }
+
+          button{
+            width: 60px;
+            height: 60px;
+            font-size: 25px;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background-color: black;
+          }
+          button:hover{
+            opacity: 70%;
+            box-shadow: 2px 2px 2px black;
+          }
+
+          @media(max-width: 600px){
+
+            .container{
+            height: fit-content;
+            width: max-width;
+            padding: 30px;
+           }
+            
+            .calculator-container{
+            width: 280px;
+            height: 380px;
+           }
+            
+            button{
+            width: 48px;
+            height: 48px;
+            font-size: 25px;
+            }
+
+            .buttons-container{
+            margin: 3px;
+            display: flex;
+            justify-content: space-between;
+          }
+          }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator-container">
+        <div class="answer-section">
+          
+        </div>
+        <div class="buttons-container">
+          <div class="symbols-container">
+            <div class="rows">
+              <button style="color: orange;"> C </button>
+              <button style="color: limegreen;"> ( ) </button>
+              <button style="color: limegreen;">  % </button>&nbsp;
+              <button style="color: limegreen"> / </button>
+            </div>
+            <div class="rows">
+              <button> 7 </button>
+              <button> 8 </button>
+              <button> 9 </button>&nbsp;
+              <button style="color: limegreen"> x </button> 
+            </div>
+            <div class="rows">
+              <button> 4 </button>
+              <button> 5 </button>
+              <button> 6 </button>&nbsp;
+              <button style="color: limegreen"> - </button>
+            </div>
+            <div class="rows">
+              <button> 1 </button>
+              <button> 2 </button>
+              <button> 3 </button>&nbsp;
+              <button style="color: limegreen"> + </button>
+            </div>
+            <div class="rows">
+              <button> +/- </button>
+              <button> 0 </button>
+              <button> , </button>&nbsp;
+              <button style="color: white; background-color: limegreen"> = </button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
