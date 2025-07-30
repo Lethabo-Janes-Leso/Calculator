@@ -70,11 +70,32 @@
             opacity: 70%;
             box-shadow: 2px 2px 2px black;
           }
-          .calculator-container{
-            width: fit-content;
-            height: 450px;
-            margin: 2 auto;
+          @media(max-width: 600px){
+
+            .container{
+            height: fit-content;
+            width: max-width;
+            padding: 30px;
+           }
+            
+            .calculator-container{
+            width: 280px;
+            height: 380px;
+           }
+            
+            button{
+            width: 48px;
+            height: 48px;
+            font-size: 25px;
+            }
+
+            .buttons-container{
+            margin: 3px;
+            display: flex;
+            justify-content: space-between;
+            }
           }
+       
     </style>
   </head>
   <body>
